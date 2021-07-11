@@ -32,6 +32,13 @@
     <div class="col-md-4">
         <section>
             <form id="account" method="post">
+                @if (ViewBag.Message != null)
+                {
+                    <div class="alert alert-success">
+                        @ViewBag.Message
+                    </div>
+                }
+                <br />
                 <h3 style="color: red">We'd Love To Hear From YOU!</h3>
                 <hr />
                 <div class="form-group">
@@ -65,7 +72,7 @@
                 </div>
                 <br />
                 <div class="form-group">
-                    <input type="submit" value="Submit" class="btn btn-danger"/>
+                    <input type="submit" value="Submit" class="btn btn-danger" />
                     <a asp-action="Index" class="btn btn-warning">Back to Home</a>
                 </div>
 

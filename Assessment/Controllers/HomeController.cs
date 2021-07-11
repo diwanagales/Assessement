@@ -44,13 +44,13 @@ namespace Assessment.Controllers
         [HttpPost]
         public IActionResult ContactUs(ContactUs record)
         {
-            using (MailMessage mail = new MailMessage("contact.ccap@gmail.com", record.Email))
+            using (MailMessage mail = new MailMessage("contact.ccap2021@gmail.com", record.Email))
             {
                 mail.Subject = record.Subject;
 
                 string message = "Hello, " + record.SenderName + "!<br/><br/>" +
                     "Our team has received your inquiry. Here are the details: <br/><br/>" +
-                    "Contact Number: <strong>" + record.ContactNo + "</strong><br/>" +
+                    "Contact Number: <strong>" + record.ContactNo + "</strong><br/>" + "<br/>" +
                     "Message:<br/><strong>" + record.Message + "</strong><br/><br/>" +
                     "Please wait for our reply. Thank you!";
                 mail.Body = message;
@@ -60,7 +60,7 @@ namespace Assessment.Controllers
                 {
                     smtp.Host = "smtp.gmail.com";
                     smtp.EnableSsl = true;
-                    NetworkCredential NetworkCred = new NetworkCredential("contact.ccap@gmail.com", "gboyabiwanikissleged24");
+                    NetworkCredential NetworkCred = new NetworkCredential("contact.ccap2021@gmail.com", "gboyabiwanikissleged24");
                     smtp.UseDefaultCredentials = true;
                     smtp.Credentials = NetworkCred;
                     smtp.Port = 587;

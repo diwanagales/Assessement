@@ -8,7 +8,7 @@ namespace Assessment.Models
 {
     public class ContactUs
     {
-        [Display(Name = "Sender Name")]
+        [Display(Name = "Name")]
         [Required(ErrorMessage = "Required.")]
         public string SenderName { get; set; }
 

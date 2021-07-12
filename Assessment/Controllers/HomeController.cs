@@ -41,6 +41,7 @@ namespace Assessment.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public IActionResult ContactUs(ContactUs record)
         {

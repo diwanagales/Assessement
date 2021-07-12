@@ -70,5 +70,10 @@ namespace Assessment.Controllers
             }
             return View();
         }
+        
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
     }
 }

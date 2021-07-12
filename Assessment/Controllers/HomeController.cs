@@ -75,5 +75,10 @@ namespace Assessment.Controllers
         {
             return View();
         }
+
+        public IActionResult AssessmentReg()
+        {
+            return View();
+        }
     }
 }

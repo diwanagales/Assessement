@@ -6,15 +6,32 @@
 
 <style>
 
-    #contact{
-        margin-right: 150px;
+    #contact {
+        margin-right: 200px;
         margin-top: 50px;
     }
+
     .form-group {
         color: red;
+        font-weight: bold;
     }
 
+    h1 {
+        padding: 70px;
+        padding-bottom: 13px;
+        padding-top:13px;
+        background-color: #BA2424;
+        border: 20px solid #E5D3B3;
+        border-radius: 5px;
+        color: white;
+        text-align:center;
+        margin: 0px;
+    }
 </style>
+
+
+<h1>Contact Us</h1>
+
 <div class="row" id="contact">
     <div class="col-md-2"></div>
     <div class="col-md-6" id="map">
@@ -23,7 +40,7 @@
                 <div class="wpb_wrapper">
                     <div class="wpb_map_wraper">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30887.358991805966!2d120.98172557272676!3d14.603640147223025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7a2857250ff%3A0x98894e83590384f1!2sCCAP%20Fair%20Trade!5e0!3m2!1sen!2sph!4v1616232894664!5m2!1sen!2sph"
-                                width="440" height="580" style="border: 0px; pointer-events: none;" allowfullscreen="" loading="lazy"></iframe>
+                                width="440" height="600" style="border: 0px; pointer-events: none;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
@@ -32,40 +49,47 @@
     <div class="col-md-4">
         <section>
             <form id="account" method="post">
-                <h3 style="color: red">We'd Love To Hear From YOU!</h3>
+                @if (ViewBag.Message != null)
+                {
+                    <div class="alert alert-success">
+                        @ViewBag.Message
+                    </div>
+                }
+                <br />
+                <h3 style="color: red; text-align: center; font-weight: bold;">We'd Love To Hear From YOU!</h3>
                 <hr />
                 <div class="form-group">
                     <label asp-for="SenderName"></label>
                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                    <input asp-for="SenderName" class="form-control" />
+                    <input asp-for="SenderName" class="form-control" placeholder="Enter Name"/>
                     <span asp-validation-for="SenderName" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="Email"></label>
                     <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                    <input asp-for="Email" class="form-control" />
+                    <input asp-for="Email" class="form-control" placeholder="Enter Email" />
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="ContactNo"></label>
                     <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                    <input asp-for="ContactNo" class="form-control" />
+                    <input asp-for="ContactNo" class="form-control" placeholder="Enter Contact No" />
                     <span asp-validation-for="ContactNo" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="Subject"></label>
                     <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                    <input asp-for="Subject" class="form-control" />
+                    <input asp-for="Subject" class="form-control" placeholder="Enter Subject"/>
                     <span asp-validation-for="Subject" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="Message" class="control-label"></label>
-                    <textarea asp-for="Message" class="form-control"></textarea>
+                    <textarea asp-for="Message" class="form-control" placeholder="Enter your message here..."></textarea>
                     <span asp-validation-for="Message" class="text-danger"></span>
                 </div>
                 <br />
                 <div class="form-group">
-                    <input type="submit" value="Submit" class="btn btn-danger"/>
+                    <input type="submit" value="Submit" class="btn btn-danger" />
                     <a asp-action="Index" class="btn btn-warning">Back to Home</a>
                 </div>
 

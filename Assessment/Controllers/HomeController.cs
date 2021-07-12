@@ -86,5 +86,10 @@ namespace Assessment.Controllers
         {
             return View();
         }
+
+        public IActionResult AssessmentResult()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "AssessmentQuiz";
+}
+
+<style>
+
+    h1 {
+        padding: 70px;
+        padding-bottom: 13px;
+        padding-top: 13px;
+        background-color: #BA2424;
+        border: 20px solid #E5D3B3;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        margin: 0px;
+    }
+
+    h3 {
+        text-align: center;
+        padding: 50px;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    a {
+        text-decoration: underline;
+        text-decoration-color: #BA2424;
+        color: #BA2424;
+    }
+
+    #agreeTC {
+        padding-left: 75px;
+    }
+
+    #fillUp {
+        padding-left: 50px;
+    }
+
+    #artisanInfo {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+    #artlbl1, #artlbl2, #artlbl3 {
+        color: #BA2424;
+    }
+
+    #page1next {
+        background-color: #BA2424;
+        border-radius: 12px;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        display: grid;
+    }
+</style>
+
+<h1>CCAP - Online Assessment Training</h1>
+
+<h3>Reminder! Pleasetake this assessment seriously and answer the following truthfully</h3>
+
+<form>
+    <div class="container">
+        <div class="col-6">
+            <p>1.) Type of Product you wish at produced:</p>
+            <input type="radio" id="Ornaments" name="Ornaments" value="Ornaments">
+            <label for="Ornaments">Ornaments</label><br>
+            <input type="radio" id="Bags and Accessories" name="fav_language" value="CSS">
+            <label for="css">Bags and Accessories</label><br>
+            <input type="radio" id="javascript" name="" value="JavaScript">
+            <label for="javascript">Office Items</label><br>
+            <input type="radio" id="javascript" name="" value="JavaScript">
+            <label for="javascript">Homeware</label><br>
+            <label for="others">Others:</label>
+            <input type="text" id="others" name="others" value="">
+
+
+            <p>2.) How long have you been an Artisan?</p>
+            <input type="radio" id="Ornaments" name="Ornaments" value="Ornaments">
+            <label for="Ornaments">0 - 1 year</label><br>
+            <input type="radio" id="Bags and Accessories" name="fav_language" value="CSS">
+            <label for="css">2 - 3 years</label><br>
+            <input type="radio" id="javascript" name="" value="JavaScript">
+            <label for="javascript">4 - 5 years</label><br>
+            <input type="radio" id="javascript" name="" value="JavaScript">
+            <label for="javascript">More than 5 years</label><br>
+
+
+            <p>3.) How much do you sell your product (per piece)?</p>
+            <input type="radio" id="Ornaments" name="Ornaments" value="Ornaments">
+            <label for="Ornaments">Php 100.00- 199.00</label><br>
+            <input type="radio" id="Bags and Accessories" name="fav_language" value="CSS">
+            <label for="css">Php 200.00 - 299.00</label><br>
+            <input type="radio" id="javascript" name="" value="JavaScript">
+            <label for="javascript">Php 300.00 - 499.00</label><br>
+            <input type="radio" id="javascript" name="" value="JavaScript">
+            <label for="javascript">Php 500.00 and above</label><br>
+        </div>
+        <div class="col-6">
+            <p>4.) Types of Craft you wish to be improved</p>
+            <input type="radio" id="Ornaments" name="Ornaments" value="Ornaments">
+            <label for="Ornaments">Ornaments</label><br>
+            <input type="radio" id="Bags and Accessories" name="fav_language" value="CSS">
+            <label for="css">Bags and Accessories</label><br>
+            <input type="radio" id="javascript" name="" value="JavaScript">
+            <label for="javascript">Office Items</label><br>
+            <input type="radio" id="javascript" name="" value="JavaScript">
+            <label for="javascript">Homeware</label><br>
+            <label for="others">Others:</label>
+            <input type="text" id="others" name="others" value="">
+
+            <p>5.) How do you sell your work</p>
+            <input type="radio" id="html" name="" value="HTML">
+            <label for="html">Brochures</label><br>
+            <input type="radio" id="html" name="" value="HTML">
+            <label for="html">Social Media</label><br>
+            <input type="radio" id="css" name="" value="CSS">
+            <label for="css">Websites</label><br>
+            <input type="radio" id="javascript" name="" value="JavaScript">
+            <label for="javascript">Own Gallery</label>
+
+            
+        </div>
+        <p style="color: darkred">Optional*</p>
+        <p>We would like to see one of your work! Please upload your work here.</p>
+        <button>Upload here</button>
+        
+        <button type="button" class="btn btn-primary" id="page1next"><a href="AssessmentResult">See Result</a></button>
+
+    </div>
+    
+
+   
+
+</form>

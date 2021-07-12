@@ -3,5 +3,99 @@
     ViewData["Title"] = "AssessmentReg";
 }
 
-<h1>AssessmentReg</h1>
+<style>
+
+    h1 {
+        padding: 70px;
+        padding-bottom: 13px;
+        padding-top: 13px;
+        background-color: #BA2424;
+        border: 20px solid #E5D3B3;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        margin: 0px;
+    }
+
+    h3 {
+        text-align: center;
+        padding: 50px;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    a {
+        text-decoration: underline;
+        text-decoration-color: #BA2424;
+        color: #BA2424;
+    }
+
+    #agreeTC {
+        padding-left: 75px;
+    }
+
+    #fillUp {
+        padding-left: 50px;
+    }
+
+    #artisanInfo {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+    #artlbl1, #artlbl2, #artlbl3 {
+        color: #BA2424;
+    }
+
+    #page1next {
+        background-color: #BA2424;
+        border-radius: 12px;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        display: grid;
+    }
+</style>
+
+<h1>CCAP - Online Assessment Training</h1>
+
+<h3>-- Terms and Conditions --</h3>
+
+<p>
+    Welcome! We would request you to kindly read the terms of service carefully and consider these as the terms of agreement between you and us.
+    This governs the use and access to the website and the services to you and your associates.
+    This this Online Assessment to streamline your preparation and performance.
+    The terms to provide service are between CCAP and the trainees. No third party recipient interference is permitted.
+    Click here to see the - <a href="https://ccapfairtrade.com/">Terms and Conditions*</a>
+</p>
+<div class="form-check" id="agreeTC" required>
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+        I agree to the <a href="https://ccapfairtrade.com/">Terms and Conditions*</a>
+    </label>
+</div>
+
+<hr />
+<br />
+<p class="text-primary" id="fillUp">Please fill up the following below to proceed in the Online Assessment:</p>
+<form>
+    <div class="form-group" id="artisanInfo">
+        <label class="col-form-label mt-4" for="artisanName" id="artlbl1" required>Name:</label>
+        <input type="text" class="form-control" placeholder="Name" id="artisanName">
+        <label class="col-form-label mt-4" for="artisanPhoneNumer" id="artlbl2" required>Active Phone Number:</label>
+        <input type="text" class="form-control" placeholder="Active Phone Number" id="artisanPhoneNumer">
+        <label class="col-form-label mt-4" for="artisanEmail" id="artlbl3" required>E-mail:</label>
+        <input type="text" class="form-control" placeholder="E-mail" id="artisanEmail">
+    </div>
+    <br />
+    <div>
+        <button type="button" class="btn btn-primary" id="page1next">Next</button>
+    </div>
+</form>
+
+
+
+
 

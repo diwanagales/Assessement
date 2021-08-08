@@ -91,10 +91,5 @@ namespace Assessment.Controllers
         {
             return View();
         }
-
-        public IActionResult AssessmentQuiz2()
-        {
-            return View();
-        }
     }
 }

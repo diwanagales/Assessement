@@ -31,6 +31,7 @@
 
     p {
         text-align: justify;
+        text-align: center;
     }
 
     a {
@@ -64,16 +65,22 @@
         display: flex;
         display: grid;
     }
+
 </style>
 
-<h1>Result</h1>
+<h1>Initial Assessment Form</h1>
 <br />
 <br />
-<h2>Thank you for taking the assessment test!</h2>
-<h2>Please wait for an email for the result!</h2>
-<br />
-<br />
-<button type="button" class="btn btn-primary" id="page1next" asp-area="" asp-controller="Home" asp-action="Index"><a href="Index" style="color:white">Home</a></button>
+<div>
+    <h2>Thank you for taking the assessment quiz!</h2>
+    <p>Please click the link below to be redirected to the initial assessment form. Thank you!</p>
+    <br />
+    <center>
+        <button type="button"  id="page1next" class="btn btn-link">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfokvgetoDgo_h0qOgoyz3lB4cYsDme2tuH59n8ZfgR1p-EoQ/viewform" target="_blank" style="color:white">Click here!</a>
+        </button>
+    </center>
+</div>
 
 
 

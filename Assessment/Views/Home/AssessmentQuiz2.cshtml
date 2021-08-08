@@ -1,0 +1,137 @@
+﻿@{
+    ViewData["Title"] = "AssessmentQuiz2";
+}
+
+<style>
+
+    h1 {
+        padding: 70px;
+        padding-bottom: 13px;
+        padding-top: 13px;
+        background-color: #BA2424;
+        border: 20px solid #E5D3B3;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        margin: 0px;
+    }
+
+    h4 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    a {
+        text-decoration: underline;
+        text-decoration-color: #BA2424;
+        color: #BA2424;
+    }
+
+    #agreeTC {
+        padding-left: 75px;
+    }
+
+    #fillUp {
+        padding-left: 50px;
+    }
+
+    #artisanInfo {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+    #artlbl1, #artlbl2, #artlbl3 {
+        color: #BA2424;
+    }
+
+    #page1next {
+        background-color: #BA2424;
+        border-radius: 12px;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        display: grid;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+
+<h1>CCAP - Online Assessment Training</h1>
+
+<h4>Reminder! Please take this assessment seriously and answer the following truthfully</h4>
+
+<div class="row">
+    <div class="column">
+        <p>6.) Which of the following are your largest Customer Groups</p>
+        <input type="checkbox" id="Ornaments" name="Ornaments" value="Ornaments">
+        <label for="Ornaments">Private/Consumers</label><br>
+        <input type="checkbox" id="Bags and Accessories" name="fav_language" value="CSS">
+        <label for="css">Residential Interior Designers</label><br>
+        <input type="checkbox" id="javascript" name="" value="JavaScript">
+        <label for="javascript">Galleries</label><br>
+        <input type="checkbox" id="javascript" name="" value="JavaScript">
+        <label for="javascript">Commercial Interior Desiigners</label><br>
+        <label for="others">Others:</label>
+        <input type="text" id="others" name="others" value="">
+        <br />
+        <br />
+        <p>7.) How much of you current business is from repeat customers?</p>
+        <input type="checkbox" id="Ornaments" name="Ornaments" value="Ornaments">
+        <label for="Ornaments">None</label><br>
+        <input type="checkbox" id="Bags and Accessories" name="fav_language" value="CSS">
+        <label for="css">Some</label><br>
+        <input type="checkbox" id="javascript" name="" value="JavaScript">
+        <label for="javascript">About Half</label><br>
+        <input type="checkbox" id="javascript" name="" value="JavaScript">
+        <label for="javascript">Most</label>
+        <input type="checkbox" id="javascript" name="" value="JavaScript">
+        <label for="javascript">All</label>
+
+        <br />
+        <br />
+        <p>8.) List 3 main reasons why customers work with you as opposed to others?</p>
+        <label for="exampleFormControlTextarea1">Reason 1</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <label for="exampleFormControlTextarea1">Reason 2</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <label for="exampleFormControlTextarea1">Reason 3</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <br />
+        <br />
+    </div>
+    <div class="column">
+        <p>9.) Are you looking to increase your sales?</p>
+        <input type="radio" id="Ornaments" name="Ornaments" value="Ornaments">
+        <label for="Ornaments">Yes</label><br>
+        <input type="radio" id="Bags and Accessories" name="fav_language" value="CSS">
+        <label for="css">No</label><br>
+
+        <br />
+        <br />
+        <p>10.) Biggest problem in gaining new customers? </p>
+        <label for="exampleFormControlTextarea1">Explain Below</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <br />
+        <br />
+        <div class="form-group">
+            <p style="color: darkred">Optional*</p>
+            <label for="formFile" class="form-label mt-4">We would like to see a sample of your craft, please upload your work here.</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <br />
+        <button type="button" class="btn btn-primary" id="page1next"><a href="AssessmentResult" style="color:white">Submit</a></button>
+    </div>
+
+
+
+</div>
